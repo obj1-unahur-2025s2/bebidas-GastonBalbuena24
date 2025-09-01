@@ -7,13 +7,14 @@ object whisky {
 
 object terere {
     method rendimiento(dosis) {
-        return 0.1 * dosis
+        return 1.max(0.1 * dosis)
+        //return (0.1 * dosis).max(1)
     }
 
 }
 
 object cianuro {
     method rendimiento(dosis) {
-        return dosis * 0
+        return 0
     }
 }
